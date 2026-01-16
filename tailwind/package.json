@@ -1,7 +1,8 @@
 {
   "name": "tailwind",
   "scripts":{
-	  "gen-css":"tailwindcss -i ./base.css -o ../src/static/style.css --minify"
+	  "gen-css":"tailwindcss -i ./base.css -o ../src/static/style.css --minify",
+	  "watch-css":"tailwindcss -i ./base.css -o ../src/static/style.css --watch=always --minify"
   },
   "devDependencies": {
     "@types/bun": "latest"

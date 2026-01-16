@@ -4,20 +4,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="/scripts/htmx.min.js"></script>
+	<link rel="stylesheet" href="/static/style.css">
 
 	<title>shitty website</title>
 </head>
 <body>
+
 	<header
-		hx-get="/hx/header"
+		hx-get="/hx/header.html"
 		hx-trigger="load once">
 	</header>
 
 
-	<main
-		hx-get="/hx/main"
-		hx-trigger="load once"
-		alt="loading...">
+	<main class="bg-amber-50"
+		hx-get="/hx/main.html"
+		hx-trigger="load once">
+		loading...
 	</main>
+
 </body>
 </html>
