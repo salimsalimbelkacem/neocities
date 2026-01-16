@@ -1,0 +1,15 @@
+{
+  "name": "tailwind",
+  "scripts":{
+	  "gen-css":"tailwindcss -i ./base.css -o ../src/static/style.css --minify"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18"
+  }
+}

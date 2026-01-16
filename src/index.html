@@ -8,7 +8,16 @@
 	<title>shitty website</title>
 </head>
 <body>
-	<main hx-get="/main/1.html" hx-trigger="load">
+	<header
+		hx-get="/hx/header"
+		hx-trigger="load once">
+	</header>
+
+
+	<main
+		hx-get="/hx/main"
+		hx-trigger="load once"
+		alt="loading...">
 	</main>
 </body>
 </html>
